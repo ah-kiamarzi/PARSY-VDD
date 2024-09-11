@@ -627,10 +627,12 @@ void SI(){//SysID
 	#endif
 /************************************************/
 
-
-
-
 	dataPreparation(NO,false,core_id);
+	QR_decompositon(NO,core_id);
+	AR_Func(core_id);
+
+
+
 	if(ARMA){
 		dataPreparation(NO2,true,core_id);
 		QR_decompositon(NO2,core_id);

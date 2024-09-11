@@ -4,7 +4,8 @@ PI_L1 float two = 2;
 PI_L1 float b[MODEL_ORDER];
 
 
-PI_L2 float v[NO];
+PI_L1 float v[NO];
+// PI_L2 float v[NO];
 
 
 void HH_QR(float **Q, float **R, float **Q_temp, float **R_temp,float **v_temp, float **input,int N_ROW, int N_COL);
@@ -302,7 +303,6 @@ void HH_QR(float **Q, float **R, float **Q_temp, float **R_temp,float **v_temp, 
 		#endif
 	
 		#if NUM_CORES > 1
-
 			if(start_COL >= j){
 				start = start_COL;
 			}else if(end_COL >= j){
